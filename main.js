@@ -74,7 +74,7 @@ function sayHello(name) {
 sayHello("Тимофей");
 
 function printInfo(name, age){
-    console.log(`Hello, ${name}. Your age: ${age}`)
+    console.log(`Hello, ${name}.\nYour age: ${age}.`)
 }
 printInfo("Олег",25)
 
@@ -119,4 +119,42 @@ const square = x => x * x;
 const calculate = (a,b) => {
     let result = a + b;
     return result * 2;
+}
+
+let numbersArr = [1, 2, 3, 4, 5];
+console.log(numbersArr);
+console.log(numbersArr[0]);
+console.log(numbersArr[1]);
+
+let colors = ["Red", "Green", "Blue"];
+console.log(colors[0],colors[2])
+console.log(colors)
+
+console.log(numbersArr.length)
+numbersArr.push(10);
+console.log(numbersArr);
+numbersArr.pop();
+console.log(numbersArr);
+
+let numbers2 = [10, 20, 30];
+for (let i = 0; i < numbers2.length; i++) {
+    console.log(numbers2[i]);
+}
+
+for (let value of numbers2){
+    console.log(value);
+}
+
+let mixedArray = [1, "text", true, 3.14];
+console.log(mixedArray);
+
+console.log(numbersArr.includes(1));
+console.log(numbersArr.indexOf(2));
+
+//console.log(fruits.includes("яблоко"));
+//console.log(fruits.includes("манго"));
+
+let cityArr = ["Moscow", "Volgograd", "Vena", "Bejing", "New-York"];
+if(cityArr.includes("Volgograd") == true){
+    console.log(cityArr.indexOf("Volgograd"))
 }
